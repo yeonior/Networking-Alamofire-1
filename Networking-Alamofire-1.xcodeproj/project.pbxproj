@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		A280880E2857A534009FDA26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A280880D2857A534009FDA26 /* AppDelegate.swift */; };
 		A28088102857A534009FDA26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A280880F2857A534009FDA26 /* SceneDelegate.swift */; };
-		A28088122857A534009FDA26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28088112857A534009FDA26 /* ViewController.swift */; };
+		A28088122857A534009FDA26 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28088112857A534009FDA26 /* MyViewController.swift */; };
 		A28088152857A534009FDA26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A28088132857A534009FDA26 /* Main.storyboard */; };
 		A28088172857A537009FDA26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A28088162857A537009FDA26 /* Assets.xcassets */; };
 		A280881A2857A537009FDA26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A28088182857A537009FDA26 /* LaunchScreen.storyboard */; };
+		A28088222857A7E4009FDA26 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28088212857A7E4009FDA26 /* MyTableViewCell.swift */; };
+		C232FC69A41A759D6B33B7E3 /* Pods_Networking_Alamofire_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5CE4F5F3AE28FC7E4122D0 /* Pods_Networking_Alamofire_1.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31D98F794203750ED7BBA7AE /* Pods-Networking-Alamofire-1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Networking-Alamofire-1.release.xcconfig"; path = "Target Support Files/Pods-Networking-Alamofire-1/Pods-Networking-Alamofire-1.release.xcconfig"; sourceTree = "<group>"; };
+		8D5CE4F5F3AE28FC7E4122D0 /* Pods_Networking_Alamofire_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Networking_Alamofire_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A280880A2857A534009FDA26 /* Networking-Alamofire-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Networking-Alamofire-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A280880D2857A534009FDA26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A280880F2857A534009FDA26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A28088112857A534009FDA26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A28088112857A534009FDA26 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		A28088142857A534009FDA26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A28088162857A537009FDA26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A28088192857A537009FDA26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A280881B2857A537009FDA26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A28088212857A7E4009FDA26 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		ECE13A1C9CED7E86E60A8B3E /* Pods-Networking-Alamofire-1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Networking-Alamofire-1.debug.xcconfig"; path = "Target Support Files/Pods-Networking-Alamofire-1/Pods-Networking-Alamofire-1.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C232FC69A41A759D6B33B7E3 /* Pods_Networking_Alamofire_1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74F06DEC811AEB3C91C13AE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D5CE4F5F3AE28FC7E4122D0 /* Pods_Networking_Alamofire_1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A05556CF2B5A6A48D72DB8EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ECE13A1C9CED7E86E60A8B3E /* Pods-Networking-Alamofire-1.debug.xcconfig */,
+				31D98F794203750ED7BBA7AE /* Pods-Networking-Alamofire-1.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A28088012857A534009FDA26 = {
 			isa = PBXGroup;
 			children = (
 				A280880C2857A534009FDA26 /* Networking-Alamofire-1 */,
 				A280880B2857A534009FDA26 /* Products */,
+				A05556CF2B5A6A48D72DB8EA /* Pods */,
+				74F06DEC811AEB3C91C13AE3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,7 +85,8 @@
 			children = (
 				A280880D2857A534009FDA26 /* AppDelegate.swift */,
 				A280880F2857A534009FDA26 /* SceneDelegate.swift */,
-				A28088112857A534009FDA26 /* ViewController.swift */,
+				A28088212857A7E4009FDA26 /* MyTableViewCell.swift */,
+				A28088112857A534009FDA26 /* MyViewController.swift */,
 				A28088132857A534009FDA26 /* Main.storyboard */,
 				A28088162857A537009FDA26 /* Assets.xcassets */,
 				A28088182857A537009FDA26 /* LaunchScreen.storyboard */,
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A280881E2857A537009FDA26 /* Build configuration list for PBXNativeTarget "Networking-Alamofire-1" */;
 			buildPhases = (
+				7F5B637A9911DD5EE37E6BEC /* [CP] Check Pods Manifest.lock */,
 				A28088062857A534009FDA26 /* Sources */,
 				A28088072857A534009FDA26 /* Frameworks */,
 				A28088082857A534009FDA26 /* Resources */,
+				368ED11B83975DE547CA88AF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +163,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		368ED11B83975DE547CA88AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Networking-Alamofire-1/Pods-Networking-Alamofire-1-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Networking-Alamofire-1/Pods-Networking-Alamofire-1-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Networking-Alamofire-1/Pods-Networking-Alamofire-1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F5B637A9911DD5EE37E6BEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Networking-Alamofire-1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A28088062857A534009FDA26 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A28088122857A534009FDA26 /* ViewController.swift in Sources */,
+				A28088122857A534009FDA26 /* MyViewController.swift in Sources */,
+				A28088222857A7E4009FDA26 /* MyTableViewCell.swift in Sources */,
 				A280880E2857A534009FDA26 /* AppDelegate.swift in Sources */,
 				A28088102857A534009FDA26 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +355,7 @@
 		};
 		A280881F2857A537009FDA26 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECE13A1C9CED7E86E60A8B3E /* Pods-Networking-Alamofire-1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +384,7 @@
 		};
 		A28088202857A537009FDA26 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31D98F794203750ED7BBA7AE /* Pods-Networking-Alamofire-1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
