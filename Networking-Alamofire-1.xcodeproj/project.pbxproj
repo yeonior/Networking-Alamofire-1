@@ -14,6 +14,8 @@
 		A28088172857A537009FDA26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A28088162857A537009FDA26 /* Assets.xcassets */; };
 		A280881A2857A537009FDA26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A28088182857A537009FDA26 /* LaunchScreen.storyboard */; };
 		A28088222857A7E4009FDA26 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28088212857A7E4009FDA26 /* MyTableViewCell.swift */; };
+		A2DF37CD2857AF8E009967C3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DF37CC2857AF8E009967C3 /* NetworkManager.swift */; };
+		A2DF37CF2857B6A1009967C3 /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DF37CE2857B6A1009967C3 /* MyModel.swift */; };
 		C232FC69A41A759D6B33B7E3 /* Pods_Networking_Alamofire_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5CE4F5F3AE28FC7E4122D0 /* Pods_Networking_Alamofire_1.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,8 @@
 		A28088192857A537009FDA26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A280881B2857A537009FDA26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A28088212857A7E4009FDA26 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		A2DF37CC2857AF8E009967C3 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A2DF37CE2857B6A1009967C3 /* MyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyModel.swift; sourceTree = "<group>"; };
 		ECE13A1C9CED7E86E60A8B3E /* Pods-Networking-Alamofire-1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Networking-Alamofire-1.debug.xcconfig"; path = "Target Support Files/Pods-Networking-Alamofire-1/Pods-Networking-Alamofire-1.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,7 +62,6 @@
 				ECE13A1C9CED7E86E60A8B3E /* Pods-Networking-Alamofire-1.debug.xcconfig */,
 				31D98F794203750ED7BBA7AE /* Pods-Networking-Alamofire-1.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -85,6 +88,8 @@
 			children = (
 				A280880D2857A534009FDA26 /* AppDelegate.swift */,
 				A280880F2857A534009FDA26 /* SceneDelegate.swift */,
+				A2DF37CC2857AF8E009967C3 /* NetworkManager.swift */,
+				A2DF37CE2857B6A1009967C3 /* MyModel.swift */,
 				A28088212857A7E4009FDA26 /* MyTableViewCell.swift */,
 				A28088112857A534009FDA26 /* MyViewController.swift */,
 				A28088132857A534009FDA26 /* Main.storyboard */,
@@ -211,7 +216,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A28088122857A534009FDA26 /* MyViewController.swift in Sources */,
+				A2DF37CF2857B6A1009967C3 /* MyModel.swift in Sources */,
 				A28088222857A7E4009FDA26 /* MyTableViewCell.swift in Sources */,
+				A2DF37CD2857AF8E009967C3 /* NetworkManager.swift in Sources */,
 				A280880E2857A534009FDA26 /* AppDelegate.swift in Sources */,
 				A28088102857A534009FDA26 /* SceneDelegate.swift in Sources */,
 			);

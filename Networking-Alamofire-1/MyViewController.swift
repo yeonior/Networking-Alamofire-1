@@ -7,18 +7,23 @@
 
 import UIKit
 
-class MyViewController: UIViewController {
+final class MyViewController: UIViewController {
     
     // MARK: - Subviews
-    let myTableView = UITableView()
+    private let myTableView = UITableView()
+    private let networkManager = NetworkManager.shared
     
     // MARK: - Properties
-    var myArray: [String] = []
+    private var myArray: [MyModel] = []
     
     // MARK: - Lifecylce
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViews()
+        networkManager.fetchData { [weak self] data in
+            self?.myArray = data
+            self?.myTableView.reloadData()
+        }
     }
     
     override func viewDidLayoutSubviews() {
@@ -31,8 +36,6 @@ class MyViewController: UIViewController {
         title = "MyTable"
         view.addSubview(myTableView)
         myTableView.dataSource = self
-        myTableView.delegate = self
-        myTableView.register(MyTableViewCell.self, forCellReuseIdentifier: MyTableViewCell.identifier)
     }
     
     private func configureMyTableViewFrame() {
@@ -40,20 +43,19 @@ class MyViewController: UIViewController {
     }
 }
 
+// MARK: - UITableViewDataSource
 extension MyViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         myArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: MyTableViewCell.identifier, for: indexPath) as? MyTableViewCell else { return UITableViewCell() }
         
-        cell.textLabel?.text = "MyTableViewCell"
+        let cell = tableView.dequeueReusableCell(withIdentifier: MyTableViewCell.identifier) ?? MyTableViewCell(style: .subtitle, reuseIdentifier: MyTableViewCell.identifier)
+        
+        cell.textLabel?.text = myArray[indexPath.row].title
+        cell.detailTextLabel?.text = myArray[indexPath.row].body
         
         return cell
     }
-}
-
-extension MyViewController: UITableViewDelegate {
-    
 }

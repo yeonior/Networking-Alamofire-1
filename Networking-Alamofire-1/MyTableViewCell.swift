@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MyTableViewCell: UITableViewCell {
+final class MyTableViewCell: UITableViewCell {
 
     // MARK: - Properties
     static let identifier = "myCell"
